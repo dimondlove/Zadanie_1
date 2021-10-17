@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<title>Bootstrap 5</title>
+</head>
+<body>
+
+	<header>
+		
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" >
+			<div class="container-fluid">
+				<a href="#" class="navbar-brand">Название</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-lable="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="toggleMobileMenu">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li>
+							<a class="nav-link active" href="#">Главная</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#">Ссылка 1</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#">Ссылка 2</a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+						<button class="btn btn-outline-success" type="submit">Поиск</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<div class="carousel slide" id="carouselExampleCaptions" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/img_slider_1.jpg" class="d-block w-100" alt="Первый слайд">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Заголовок</h5>
+						<p>Первое рандомное фото из интернета</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="images/img_slider_2.jpg" class="d-block w-100" alt="Второй слайд">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Заголовок</h5>
+						<p>Второе рандомное фото из интернета</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="images/img_slider_3.jpg" class="d-block w-100" alt="Третий слайд">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Заголовок</h5>
+						<p>Третье рандомное фото из интернета</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    			<span class="visually-hidden">Предыдущий</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    			<span class="visually-hidden">Следующий</span>
+			</button>
+		</div>
+
+	</header>
+
+	<main>
+
+		<div class="container py-5">
+			<div class="row g-3">
+  				<div class="col-sm-6  col-md-4">
+    				<div class="card text-center">
+    					<img src="images/img_1.jpg" class="card-img-top" alt="Картинка 1">
+      					<div class="card-body">
+        					<h5 class="card-title">Карточка 1</h5>
+        					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        					<a href="#" class="btn btn-primary">Button 1</a>
+      					</div>
+    				</div>
+  				</div>
+  				<div class="col-sm-6 col-md-4">
+    				<div class="card text-center">
+    					<img src="images/img_1.jpg" class="card-img-top" alt="Картинка 2">
+      					<div class="card-body">
+        					<h5 class="card-title">Карточка 2</h5>
+        					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        					<a href="#" class="btn btn-primary">Button 2</a>
+      					</div>
+    				</div>
+ 				</div>
+ 				<div class="col-sm-6 col-md-4">
+    				<div class="card text-center">
+    					<img src="images/img_1.jpg" class="card-img-top" alt="Картинка 3">
+      					<div class="card-body">
+        					<h5 class="card-title">Карточка 3</h5>
+        					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        					<a href="#" class="btn btn-primary">Button 3</a>
+      					</div>
+    				</div>
+ 				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		
+		<div class="container-fluid bg-light py-4">
+			<div class="row justify-content-center">
+				<div class="col col-auto">
+					Copyright &copy; 2021 All rights reserved
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
